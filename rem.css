@@ -1,0 +1,17 @@
+/* rem - Relative depends on root element(html) and it does not depend parent element
+1rem = 16px :default browser style */
+
+html{
+    /* font-size: 16px; */
+    font-size: 32px;
+}
+
+.relative{
+    font-size: 1.7rem;
+    /* 2*16px=32px */
+    /* 2*32px=64px */
+}
+
+.absolute{
+    font-size:32px;
+}

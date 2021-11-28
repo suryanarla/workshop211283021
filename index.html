@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .parent{
+            border: 2px solid blue;
+            background-color: red;
+            color: white;
+            height: 900px;
+        }
+        .child-one{
+            /* In relative that particular tag will move
+            and remain will fixed so it will create
+            conflict dont use relative  */
+            /* position: relative; */
+            /* top: 80px; */
+            /* It moves left 80px */
+            /* left: 80px; */
+
+            /* position: absolute;
+            top: 0px; */
+            /* childone moves along all the
+            elements when scrolling */
+
+            /* position: fixed;
+            top: 0px; */
+            /* childone is fixed when 
+            the remaining scrolling */
+
+            /* position: sticky;
+            top: 0px; */
+            /* Childone is in normal position
+            when we scroll then childone is 
+            fixed at top */
+
+            border: 2px solid black;
+            background-color:blue;
+            color: white;
+            height: 50px;
+        }
+        .child-two{
+            border: 2px solid yellow;
+            background-color:pink;
+            color: rgb(153, 133, 133);
+            height: 50px;
+        }
+        .child-three{
+            position: sticky;
+            top: 0px;
+            border: 2px solid violet;
+            background-color: orange;
+            color: white;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        Parent
+        <div class="child-one child">Child One</div>
+        <div class="child-two child">Child Two</div>
+        <div class="child-three child">Child Three</div>
+    </div>
+    
+    
+</body>
+</html>
